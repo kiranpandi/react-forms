@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+.form-box{
+  height: 100%;
+  width: 70%;
+  background-color:whitesmoke;
+  margin-top:10%;
+  margin-left:20%;
+}
+
+.choosing-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:30%;
+  padding-right:30%;
+  padding-top:10%;
+}
+
+.top-buttons{
+  background :transparent;
+  border: none;
+  margin :30px auto 0;
+  display :block;
+  font-size :20px;
+  outline :none;
+
+  position :relative;
+  transition: 0.3s;
+  padding :10px;
+}
+  button :before{
+      content: '';
+      border-bottom: 1px solid black;
+      padding :0 10px;
+      position :absolute;
+      bottom :0;
+      left :0;
+      right :0;
+      margin :0 auto;
+      width :0;
+      transition: 0.3s;
+  }
+      
+  button:hover:before{
+      width :100%;
+      padding :0;
+  }
+  button:active{
+      background: black;
+      color :white;
+      transition :none;
+  }
+
+.form-content{
+  padding-left:10%;
+}
+
+input,select,option{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0 0 65px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.next-button{
+  padding: 14px 20px;
+  margin-left: 16%;
+  margin-top:2%;
+  background-color:cadetblue;
+}
+
+.bank-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: stretch; */
+}
+label{
+  padding-left: 7%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.bank-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top:2%;
+}
+
+.bank-button{
+  background-color: cadetblue;
+  padding: 14px 20px;
+ 
+}
+.title{
+  padding-left: 40%;
+  font-weight: bolder;
+
+}
